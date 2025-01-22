@@ -1,0 +1,21 @@
+[0/1] cd /home/gtc/esp32_workspace/helloworld/build && /usr/bin/cmake -D "IDF_SIZE_TOOL=/home/gtc/.espressif/python_env/idf5.4_py3.12_env/bin/python;-m;esp_idf_size" -D MAP_FILE=/home/gtc/esp32_workspace/helloworld/build/helloworld.map -D OUTPUT_JSON= -P /home/gtc/esp/v5.4/esp-idf/tools/cmake/run_size_tool.cmake
+                            Memory Type Usage Summary                             
+┏━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┓
+┃ Memory Type/Section ┃ Used [bytes] ┃ Used [%] ┃ Remain [bytes] ┃ Total [bytes] ┃
+┡━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━┩
+│ Flash Code          │        96478 │     1.15 │        8292098 │       8388576 │
+│    .text            │        96478 │     1.15 │                │               │
+│ DIRAM               │        54496 │    15.95 │         287264 │        341760 │
+│    .text            │        41279 │    12.08 │                │               │
+│    .data            │        10784 │     3.16 │                │               │
+│    .bss             │         2240 │     0.66 │                │               │
+│ Flash Data          │        41768 │     0.12 │       33512632 │      33554400 │
+│    .rodata          │        41512 │     0.12 │                │               │
+│    .appdesc         │          256 │      0.0 │                │               │
+│ IRAM                │        16383 │    99.99 │              1 │         16384 │
+│    .text            │        15356 │    93.73 │                │               │
+│    .vectors         │         1027 │     6.27 │                │               │
+│ RTC FAST            │          308 │     3.76 │           7884 │          8192 │
+│    .force_fast      │           28 │     0.34 │                │               │
+│    .rtc_reserved    │           24 │     0.29 │                │               │
+└─────────────────────┴──────────────┴──────────┴────────────────┴───────────────┘
